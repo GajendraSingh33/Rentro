@@ -4,7 +4,14 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { AuthModule } from './auth/auth.module';
-import { User } from './typeorm/entities/user.entity';
+import { MediaModule } from './media/media.module';
+import {
+  User,
+  PGListing,
+  Inquiry,
+  Availability,
+  Media,
+} from './typeorm/entities';
 
 @Module({
   imports: [
@@ -19,11 +26,12 @@ import { User } from './typeorm/entities/user.entity';
       username: process.env.DB_USERNAME || 'rentro_user',
       password: process.env.DB_PASSWORD || 'rentro_password',
       database: process.env.DB_NAME || 'rentro_dev',
-      entities: [User],
+      entities: [User, PGListing, Inquiry, Availability, Media],
       synchronize: process.env.NODE_ENV === 'development',
       logging: process.env.NODE_ENV === 'development',
     }),
     AuthModule,
+    MediaModule,
   ],
   controllers: [AppController],
   providers: [AppService],
