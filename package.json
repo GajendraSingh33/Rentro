@@ -1,0 +1,29 @@
+{
+  "name": "rentro",
+  "version": "0.1.0",
+  "description": "Rentro - PG Accommodation Platform",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm:dev --prefix apps/frontend\" \"npm:dev --prefix apps/backend\"",
+    "dev:frontend": "npm run dev --prefix apps/frontend",
+    "dev:backend": "npm run dev --prefix apps/backend",
+    "build": "npm run build --prefix apps/frontend && npm run build --prefix apps/backend",
+    "test": "npm run test --prefix apps/frontend && npm run test --prefix apps/backend",
+    "lint": "npm run lint --prefix apps/frontend && npm run lint --prefix apps/backend"
+  },
+  "workspaces": [
+    "apps/frontend",
+    "apps/backend"
+  ],
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  },
+  "keywords": [
+    "PG",
+    "accommodation",
+    "rental",
+    "marketplace"
+  ],
+  "author": "",
+  "license": "ISC"
+}
