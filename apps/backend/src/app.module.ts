@@ -5,6 +5,15 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { AuthModule } from './auth/auth.module';
 import { MediaModule } from './media/media.module';
+import { ListingModule } from './listings/listing.module';
+import { LocationModule } from './location/location.module';
+import { AvailabilityModule } from './availability/availability.module';
+import { InquiryModule } from './inquiries/inquiry.module';
+import { AnalyticsModule } from './analytics/analytics.module';
+import { DashboardModule } from './dashboard/dashboard.module';
+import { ContactModule } from './contact/contact.module';
+import { ModerationModule } from './moderation/moderation.module';
+import { NotificationModule } from './notifications/notification.module';
 import {
   User,
   PGListing,
@@ -32,6 +41,15 @@ import {
     }),
     AuthModule,
     MediaModule,
+    ListingModule,
+    LocationModule,
+    AvailabilityModule,
+    InquiryModule,
+    AnalyticsModule,
+    DashboardModule,
+    ContactModule,
+    ModerationModule,
+    NotificationModule,
   ],
   controllers: [AppController],
   providers: [AppService],
