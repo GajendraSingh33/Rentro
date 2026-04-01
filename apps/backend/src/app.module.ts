@@ -14,12 +14,23 @@ import { DashboardModule } from './dashboard/dashboard.module';
 import { ContactModule } from './contact/contact.module';
 import { ModerationModule } from './moderation/moderation.module';
 import { NotificationModule } from './notifications/notification.module';
+// Phase 4 modules
+import { SearchModule } from './search/search.module';
+import { FavoritesModule } from './favorites/favorites.module';
+import { ReviewsModule } from './reviews/reviews.module';
+import { SeekerDashboardModule } from './seeker-dashboard/seeker-dashboard.module';
+// Phase 5 modules
+import { AdminModule } from './admin/admin.module';
+import { ContentModule } from './content/content.module';
 import {
   User,
   PGListing,
   Inquiry,
   Availability,
   Media,
+  Favorite,
+  Review,
+  StaticPage,
 } from './typeorm/entities';
 
 @Module({
@@ -35,7 +46,7 @@ import {
       username: process.env.DB_USERNAME || 'rentro_user',
       password: process.env.DB_PASSWORD || 'rentro_password',
       database: process.env.DB_NAME || 'rentro_dev',
-      entities: [User, PGListing, Inquiry, Availability, Media],
+      entities: [User, PGListing, Inquiry, Availability, Media, Favorite, Review, StaticPage],
       synchronize: process.env.NODE_ENV === 'development',
       logging: process.env.NODE_ENV === 'development',
     }),
@@ -50,6 +61,14 @@ import {
     ContactModule,
     ModerationModule,
     NotificationModule,
+    // Phase 4 modules
+    SearchModule,
+    FavoritesModule,
+    ReviewsModule,
+    SeekerDashboardModule,
+    // Phase 5 modules
+    AdminModule,
+    ContentModule,
   ],
   controllers: [AppController],
   providers: [AppService],
