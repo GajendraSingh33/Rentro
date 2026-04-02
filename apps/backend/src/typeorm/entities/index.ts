@@ -6,3 +6,6 @@ export { Media, MediaType } from './media.entity';
 export { Favorite } from './favorite.entity';
 export { Review, ReviewStatus } from './review.entity';
 export { StaticPage, PageType, PageStatus } from './static-page.entity';
+export { Message, MessageType, MessageStatus } from './message.entity';
+export { Conversation } from './conversation.entity';
+

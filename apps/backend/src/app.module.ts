@@ -22,6 +22,8 @@ import { SeekerDashboardModule } from './seeker-dashboard/seeker-dashboard.modul
 // Phase 5 modules
 import { AdminModule } from './admin/admin.module';
 import { ContentModule } from './content/content.module';
+// Phase 6 modules
+import { MessagingModule } from './messaging/messaging.module';
 import {
   User,
   PGListing,
@@ -31,6 +33,8 @@ import {
   Favorite,
   Review,
   StaticPage,
+  Message,
+  Conversation,
 } from './typeorm/entities';
 
 @Module({
@@ -46,7 +50,7 @@ import {
       username: process.env.DB_USERNAME || 'rentro_user',
       password: process.env.DB_PASSWORD || 'rentro_password',
       database: process.env.DB_NAME || 'rentro_dev',
-      entities: [User, PGListing, Inquiry, Availability, Media, Favorite, Review, StaticPage],
+      entities: [User, PGListing, Inquiry, Availability, Media, Favorite, Review, StaticPage, Message, Conversation],
       synchronize: process.env.NODE_ENV === 'development',
       logging: process.env.NODE_ENV === 'development',
     }),
@@ -69,6 +73,8 @@ import {
     // Phase 5 modules
     AdminModule,
     ContentModule,
+    // Phase 6 modules
+    MessagingModule,
   ],
   controllers: [AppController],
   providers: [AppService],
