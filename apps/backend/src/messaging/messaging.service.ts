@@ -304,4 +304,20 @@ export class MessagingService {
       return total + unread;
     }, 0);
   }
+
+  async getConversationById(conversationId: number, userId: number): Promise<Conversation> {
+    const conversation = await this.conversationRepository.findOne({
+      where: { id: conversationId },
+    });
+
+    if (!conversation) {
+      throw new NotFoundException('Conversation not found');
+    }
+
+    if (conversation.participant1_id !== userId && conversation.participant2_id !== userId) {
+      throw new ForbiddenException('You are not a participant in this conversation');
+    }
+
+    return conversation;
+  }
 }

@@ -24,6 +24,7 @@ import { AdminModule } from './admin/admin.module';
 import { ContentModule } from './content/content.module';
 // Phase 6 modules
 import { MessagingModule } from './messaging/messaging.module';
+import { BookingModule } from './bookings/booking.module';
 import {
   User,
   PGListing,
@@ -35,6 +36,12 @@ import {
   StaticPage,
   Message,
   Conversation,
+  Booking,
+  Payment,
+  PremiumListing,
+  Offer,
+  UserActivity,
+  DeviceToken,
 } from './typeorm/entities';
 
 @Module({
@@ -50,7 +57,7 @@ import {
       username: process.env.DB_USERNAME || 'rentro_user',
       password: process.env.DB_PASSWORD || 'rentro_password',
       database: process.env.DB_NAME || 'rentro_dev',
-      entities: [User, PGListing, Inquiry, Availability, Media, Favorite, Review, StaticPage, Message, Conversation],
+      entities: [User, PGListing, Inquiry, Availability, Media, Favorite, Review, StaticPage, Message, Conversation, Booking, Payment, PremiumListing, Offer, UserActivity, DeviceToken],
       synchronize: process.env.NODE_ENV === 'development',
       logging: process.env.NODE_ENV === 'development',
     }),
@@ -75,6 +82,7 @@ import {
     ContentModule,
     // Phase 6 modules
     MessagingModule,
+    BookingModule,
   ],
   controllers: [AppController],
   providers: [AppService],

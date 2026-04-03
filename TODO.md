@@ -309,52 +309,52 @@
 
 ## Phase 6: Advanced & Professional Features
 
-### 6.1 Real-time Chat/In-app Messaging (Backend)
-- [ ] Create message model
-- [ ] Set up WebSocket connection (Socket.io)
-- [ ] Implement one-to-one messaging endpoint
-- [ ] Implement message history endpoint
-- [ ] Implement message read status
-- [ ] Create conversation model
-- [ ] Implement contact masking in messages
+### 6.1 Real-time Chat/In-app Messaging (Backend) ✅ COMPLETE
+- [x] Create message model
+- [x] Set up WebSocket connection (Socket.io)
+- [x] Implement one-to-one messaging endpoint
+- [x] Implement message history endpoint
+- [x] Implement message read status
+- [x] Create conversation model
+- [x] Implement contact masking in messages
 
-### 6.2 Real-time Chat/In-app Messaging (Frontend)
-- [ ] Create messaging interface
-- [ ] Implement real-time message updates
-- [ ] Create message input component
-- [ ] Implement conversation list
-- [ ] Create message notifications
-- [ ] Implement message read indicators
-- [ ] Set up WebSocket connection on client
+### 6.2 Real-time Chat/In-app Messaging (Frontend) ✅ COMPLETE
+- [x] Create messaging interface
+- [x] Implement real-time message updates
+- [x] Create message input component
+- [x] Implement conversation list
+- [x] Create message notifications
+- [x] Implement message read indicators
+- [x] Set up WebSocket connection on client
 
-### 6.3 Review & Rating System (Backend)
-- [ ] Create review/rating model
-- [ ] Implement post review endpoint
-- [ ] Implement get reviews endpoint
-- [ ] Implement delete review endpoint (by owner/admin)
-- [ ] Implement review moderation
-- [ ] Create rating aggregation (average rating calculation)
-- [ ] Implement review filtering (quality checks)
+### 6.3 Review & Rating System (Backend) ✅ COMPLETE (Phase 4)
+- [x] Create review/rating model
+- [x] Implement post review endpoint
+- [x] Implement get reviews endpoint
+- [x] Implement delete review endpoint (by owner/admin)
+- [x] Implement review moderation
+- [x] Create rating aggregation (average rating calculation)
+- [x] Implement review filtering (quality checks)
 
-### 6.4 Review & Rating System (Frontend)
-- [ ] Create review submission form
-- [ ] Implement star rating component
-- [ ] Create reviews display section
-- [ ] Implement review moderation indicators
-- [ ] Create user rating profile
-- [ ] Display average ratings on listing cards
+### 6.4 Review & Rating System (Frontend) ✅ COMPLETE (Phase 4)
+- [x] Create review submission form
+- [x] Implement star rating component
+- [x] Create reviews display section
+- [x] Implement review moderation indicators
+- [x] Create user rating profile
+- [x] Display average ratings on listing cards
 
-### 6.5 Online Booking & Payment Gateway (Backend)
-- [ ] Integrate Stripe/Razorpay/PayU payment gateway
-- [ ] Create booking model
-- [ ] Implement booking creation endpoint
-- [ ] Implement payment processing endpoint
-- [ ] Create payment verification webhook
-- [ ] Implement booking confirmation endpoint
+### 6.5 Online Booking & Payment Gateway (Backend) ✅ BACKEND COMPLETE
+- [x] Create booking model
+- [x] Implement booking creation endpoint
+- [x] Implement payment processing endpoint (stubs)
+- [x] Create payment verification webhook (stubs)
+- [x] Implement booking confirmation endpoint
+- [x] Implement refund processing (stubs)
+- [ ] Integrate Stripe/Razorpay/PayU payment gateway (requires API keys)
 - [ ] Create automated receipt generation
-- [ ] Implement refund processing
 
-### 6.6 Online Booking & Payment Gateway (Frontend)
+### 6.6 Online Booking & Payment Gateway (Frontend) ⚠️ NEEDS UI
 - [ ] Create booking form/modal
 - [ ] Implement payment form integration
 - [ ] Create payment processing UI with loading states
@@ -363,34 +363,35 @@
 - [ ] Implement receipt download functionality
 - [ ] Create payment status indicators
 
-### 6.7 Dynamic Pricing/Offers (Backend)
-- [ ] Create pricing/offer model
+### 6.7 Dynamic Pricing/Offers (Backend) ✅ SCHEMA READY
+- [x] Create pricing/offer model
+- [x] Implement pricing logic for calculations (in booking service)
 - [ ] Implement set pricing endpoint
 - [ ] Implement set offer endpoint
-- [ ] Create pricing logic for calculations
 - [ ] Implement time-based pricing rules
 
-### 6.8 Dynamic Pricing/Offers (Frontend)
+### 6.8 Dynamic Pricing/Offers (Frontend) ❌ NOT STARTED
 - [ ] Create pricing management interface (Owner)
 - [ ] Implement offer creation form
 - [ ] Display dynamic prices on listing pages
 - [ ] Show offer badges on search results
 - [ ] Create offer notifications
 
-### 6.9 Premium/Featured Listings (Backend)
-- [ ] Create premium listing model
+### 6.9 Premium/Featured Listings (Backend) ✅ SCHEMA READY
+- [x] Create premium listing model
 - [ ] Implement premium listing purchase endpoint
 - [ ] Create payment handling for premium listings
 - [ ] Implement premium listing boost logic
 - [ ] Create featured listing algorithm
 
-### 6.10 Premium/Featured Listings (Frontend)
+### 6.10 Premium/Featured Listings (Frontend) ❌ NOT STARTED
 - [ ] Create premium listing purchase interface (Owner)
 - [ ] Display featured badges on listings
 - [ ] Create featured listings showcase on homepage
 - [ ] Implement premium listing highlighting in search results
 
-### 6.11 AI-powered Recommendations (Backend)
+### 6.11 AI-powered Recommendations (Backend) ✅ SCHEMA READY
+- [x] Create user activity tracking model
 - [ ] Implement user behavior tracking
 - [ ] Create recommendation algorithm (collaborative filtering/content-based)
 - [ ] Implement recommendation endpoint
