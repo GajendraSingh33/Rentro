@@ -25,5 +25,10 @@
     "marketplace"
   ],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@nestjs/platform-socket.io": "^11.1.18",
+    "@nestjs/websockets": "^11.1.18",
+    "socket.io": "^4.8.3"
+  }
 }
