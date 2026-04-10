@@ -33,6 +33,7 @@
     "@nestjs/jwt": "^11.0.0",
     "@nestjs/passport": "^10.0.0",
     "@nestjs/platform-express": "^10.4.22",
+    "@nestjs/platform-socket.io": "^11.1.18",
     "@nestjs/platform-ws": "^10.2.0",
     "@nestjs/typeorm": "^9.0.0",
     "@nestjs/websockets": "^10.2.0",
