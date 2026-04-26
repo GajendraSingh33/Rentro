@@ -326,10 +326,6 @@ STRIPE_SECRET_KEY=sk_test_xxxxxxxxxxxxx
 STRIPE_PUBLISHABLE_KEY=pk_test_xxxxxxxxxxxxx
 STRIPE_WEBHOOK_SECRET=whsec_xxxxxxxxxxxxx
 
-# Option 2: Razorpay
-RAZORPAY_KEY_ID=rzp_test_xxxxxxxxxxxxx
-RAZORPAY_KEY_SECRET=xxxxxxxxxxxxx
-
 # Firebase (Optional - for push notifications)
 FIREBASE_PROJECT_ID=your-project-id
 FIREBASE_PRIVATE_KEY="-----BEGIN PRIVATE KEY-----\n...\n-----END PRIVATE KEY-----\n"
@@ -343,8 +339,7 @@ NEXT_PUBLIC_API_URL=http://localhost:3001
 
 # Payment Gateway Public Keys
 NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=pk_test_xxxxxxxxxxxxx
-# OR
-NEXT_PUBLIC_RAZORPAY_KEY_ID=rzp_test_xxxxxxxxxxxxx
+
 
 # Firebase (Optional)
 NEXT_PUBLIC_FIREBASE_API_KEY=AIzaSyXXXXXXXXXXXX
