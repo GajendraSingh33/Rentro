@@ -8,7 +8,7 @@ import {
   JoinColumn,
   Index,
 } from 'typeorm';
-import { PgListing } from './pg-listing.entity';
+import { PGListing as PgListing } from './pg-listing.entity';
 import { User } from './user.entity';
 
 export enum PremiumPlanType {

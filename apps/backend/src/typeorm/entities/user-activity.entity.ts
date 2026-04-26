@@ -8,7 +8,7 @@ import {
   JoinColumn,
 } from 'typeorm';
 import { User } from './user.entity';
-import { PgListing } from './pg-listing.entity';
+import { PGListing as PgListing } from './pg-listing.entity';
 
 export enum ActivityType {
   VIEW = 'view',
